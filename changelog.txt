@@ -1,0 +1,2 @@
+v1.0.1
+- Fixed the Treasure Hunter perk so that fish chance is calculated correctly instead of being set to 1%.

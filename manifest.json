@@ -1,0 +1,5 @@
+{
+  "namespace": "skill_prestige_fix",
+  "setup": "setup.mjs",
+  "icon": "icon.png"
+}

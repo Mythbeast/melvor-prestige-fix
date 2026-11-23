@@ -1,0 +1,184 @@
+/* Skill Prestige -- combined CSS */
+.sp-banner{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;border-radius:8px;padding:12px 16px;margin-bottom:14px;border-style:solid;border-width:1px}
+.sp-banner-left{display:flex;align-items:center;gap:10px}
+.sp-banner-icon{font-size:1.9em;line-height:1}
+.sp-banner-title{font-weight:bold;font-size:1em}
+.sp-banner-sub{color:#aaa;font-size:0.85em;margin-top:2px}
+.sp-banner-right{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.sp-pts{color:#f0c040;font-weight:bold}
+.sp-ready{color:#60c880;font-weight:bold}
+.sp-btn-prestige{background:#111 !important;font-weight:bold !important}
+.sp-btn-prestige:hover{background:#222 !important}
+.sp-btn-view{background:#111 !important;border-color:#333 !important;color:#aaa !important}
+.sp-btn-view:hover{background:#1a1a1a !important;color:#ddd !important}
+.sp-modal-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.8);display:flex;align-items:center;justify-content:center;z-index:9999}
+.sp-modal{background:#0a0a0a;border-width:2px;border-style:solid;border-radius:12px;padding:28px 32px;max-width:420px;width:90%;color:#ddd;text-align:center;box-shadow:0 8px 32px rgba(0,0,0,0.7)}
+.sp-modal-icon{font-size:2.5em;margin-bottom:8px}
+.sp-modal h3{margin:0 0 14px;font-size:1.25em}
+.sp-modal p{font-size:0.92em;line-height:1.5;margin:6px 0}
+.sp-reward{color:#f0c040;font-weight:bold}
+.sp-warn{color:#e07070 !important;font-size:0.85em !important;margin-top:12px !important}
+.sp-modal-btns{display:flex;gap:10px;justify-content:center;margin-top:18px}
+.sp-page{position:fixed;inset:0;background:linear-gradient(160deg,#050505,#0a0a0a);z-index:1000;overflow-y:auto;padding:20px}
+.sp-page-inner{max-width:860px;margin:0 auto;color:#ddd}
+.sp-page-header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+.sp-page-title{font-size:1.4em;font-weight:bold;flex:1}
+.sp-btn-back{background:#111 !important;border-color:#333 !important;color:#aaa !important}
+.sp-btn-back:hover{background:#1a1a1a !important;color:#ddd !important}
+.sp-xp-wrap{border-radius:8px;padding:12px 14px;margin-bottom:16px}
+.sp-xp-ready{background:#100e00}
+.sp-xp-label{display:flex;justify-content:space-between;font-size:0.85em;color:#aaa;margin-bottom:6px}
+.sp-xp-track{height:8px;background:#050505;border-radius:4px;overflow:hidden}
+.sp-xp-fill{height:100%;border-radius:4px;transition:width 0.3s;width:var(--xp-pct,0%)}
+.sp-xp-sub{font-size:0.78em;color:#555;margin-top:5px}
+.sp-locked{display:flex;align-items:center;gap:12px;border-radius:8px;padding:12px 16px;margin-bottom:16px;color:#c8a840;font-size:0.9em}
+.sp-stats-row{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+.sp-stat-card{border:1px solid #1a1a1a;border-radius:8px;padding:12px 16px;flex:1;min-width:120px;text-align:center;background:#0c0c0c !important}
+.sp-stat-highlight{border-width:2px}
+.sp-stat-label{font-size:0.72em;color:#555;text-transform:uppercase;letter-spacing:0.05em;margin-bottom:4px}
+.sp-stat-value{font-size:1.5em;font-weight:bold;color:#888}
+.sp-ready-val{color:#f0c040 !important}
+.sp-muted{color:#444 !important}
+.sp-modifier-list{border-radius:8px;padding:10px 14px;margin-bottom:20px;display:flex;flex-direction:column;gap:6px}
+.sp-modifier-row{display:flex;align-items:center;gap:8px;font-size:0.9em}
+.sp-modifier-icon{font-size:1.1em;flex-shrink:0}
+.sp-modifier-name{flex:1}
+.sp-modifier-value{font-weight:bold}
+.sp-modifier-rank{color:#444;font-size:0.82em}
+.sp-section-title{font-size:0.85em;font-weight:bold;text-transform:uppercase;letter-spacing:0.08em;padding-bottom:6px;border-bottom:1px solid #1a1a1a;margin-bottom:12px}
+.sp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));grid-auto-rows:1fr;gap:12px;align-items:stretch}
+.sp-card{border:1px solid #222;border-radius:10px;padding:14px;display:flex;flex-direction:column;gap:6px;height:100%;box-sizing:border-box;background:#0c0c0c}
+.sp-card-available{border-color:#2a2a2a}
+.sp-card-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.sp-card-icon-name{display:flex;align-items:center;gap:7px}
+.sp-card-icon{font-size:1.4em;line-height:1;flex-shrink:0}
+.sp-card-name{font-weight:bold;font-size:0.95em}
+.sp-card-top-right{display:flex;align-items:center;gap:6px;flex-shrink:0}
+.sp-rank-badge{border:1px solid;border-radius:10px;font-size:0.75em;font-weight:bold;padding:2px 8px;white-space:nowrap}
+.sp-card-desc{color:#666;font-size:0.82em;line-height:1.4}
+.sp-card-current{font-size:0.82em}
+.sp-toggle-btn{border-radius:10px;font-size:0.72em;font-weight:bold;padding:2px 8px;cursor:pointer;border:1px solid;white-space:nowrap}
+.sp-toggle-on{background:#0a1a0a}
+.sp-toggle-on:hover{background:#102010}
+.sp-toggle-off{background:#1a0a0a;border-color:#9e4a4a !important;color:#cf7e7e !important}
+.sp-toggle-off:hover{background:#2a1a1a}
+.sp-card-footer{display:flex;justify-content:space-between;align-items:center;margin-top:auto;padding-top:10px;border-top:1px solid #1a1a1a}
+.sp-next-cost{font-size:0.78em;color:#555}
+.sp-buy-btn{background:#111;border:1px solid #333;border-radius:6px;color:#888;font-weight:bold;padding:6px 14px;cursor:pointer;font-size:0.85em;transition:background 0.15s;white-space:nowrap}
+.sp-buy-btn:hover:not(:disabled){background:#1a1a1a}
+.sp-buy-disabled,.sp-buy-btn:disabled{background:#0a0a0a;border-color:#1a1a1a;color:#333;cursor:not-allowed}
+.sp-cost{display:inline-block;font-size:0.8em;font-weight:normal;margin-left:4px}
+/* Worker slots */
+.sp-worker-slot{background:#050505;border:1px solid;border-radius:6px;padding:8px 10px;display:flex;flex-direction:column;gap:6px;margin:3px 0}
+.sp-worker-slot-hdr{display:flex;justify-content:space-between;align-items:center}
+.sp-worker-title{font-size:0.82em;font-weight:bold}
+.sp-worker-status{font-size:0.75em;font-weight:bold;padding:2px 7px;border-radius:4px;border:1px solid}
+.sp-ws-active{}
+.sp-ws-idle{background:#1a1a1a;color:#555;border-color:#333}
+.sp-worker-row{display:flex;align-items:center;gap:8px}
+.sp-worker-label{font-size:0.8em;color:#777;white-space:nowrap;flex-shrink:0}
+.sp-worker-select{flex:1;background:#080808;border:1px solid #222;border-radius:4px;color:#aaa;font-size:0.78em;padding:3px 6px}
+.sp-worker-select:focus{outline:none}
+.sp-worker-info{font-size:0.75em;text-align:center;padding:4px 0}
+
+/* Standalone button -- avoids game .btn overrides */
+.sp-btn{display:inline-flex !important;align-items:center !important;gap:5px;border-width:1px !important;border-style:solid !important;border-radius:6px !important;padding:5px 12px !important;cursor:pointer !important;font-size:0.82em !important;font-weight:bold !important;transition:filter 0.15s;white-space:nowrap;line-height:1.4 !important;text-decoration:none !important}
+.sp-btn:hover{filter:brightness(1.25) !important}
+/* sp-btn with inline style -- the inline background/color wins over class rules */
+.sp-btn-back{background:#111 !important;border-color:#333 !important;color:#aaa !important}
+/* Card backgrounds via inline style should win -- remove default */
+
+@keyframes sp-toast-in{from{opacity:0;transform:translateX(-50%) translateY(20px)}to{opacity:1;transform:translateX(-50%) translateY(0)}}
+@keyframes sp-toast-out{from{opacity:1;transform:translateX(-50%) translateY(0)}to{opacity:0;transform:translateX(-50%) translateY(20px)}}
+.sp-toast{cursor:default}
+
+@keyframes sp-toast-in-r{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:translateX(0)}}
+@keyframes sp-toast-out-r{from{opacity:1;transform:translateX(0)}to{opacity:0;transform:translateX(20px)}}
+
+/* Custom dropdown -- replaces native <select> to avoid Steam/Electron compositor stall */
+.sp-dd{position:relative;flex:1;font-size:0.78em;user-select:none}
+.sp-dd-trigger{display:flex;justify-content:space-between;align-items:center;background:#080808;border:1px solid #222;border-radius:4px;color:#aaa;padding:3px 6px;cursor:pointer;gap:4px;min-width:0}
+.sp-dd-trigger:hover{border-color:#444;color:#ccc}
+.sp-dd-arrow{flex-shrink:0;font-size:0.7em;color:#555;transition:transform 0.15s}
+.sp-dd[data-open] .sp-dd-arrow{transform:rotate(180deg)}
+.sp-dd-label{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sp-dd-list{display:none;position:absolute;top:calc(100% + 2px);left:0;right:0;background:#0e0e0e;border:1px solid #333;border-radius:4px;z-index:9999;max-height:180px;overflow-y:auto;box-shadow:0 4px 12px #000a}
+.sp-dd[data-open] .sp-dd-list{display:block}
+.sp-dd-item{padding:4px 8px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#aaa}
+.sp-dd-item:hover{background:#1a1a1a;color:#fff}
+.sp-dd-item[data-selected]{color:#f0c040}
+
+/* Star Alignment buff glow */
+@keyframes sp-star-pulse {
+  0%,100% { box-shadow: 0 0 8px 2px #f0c04088, 0 0 20px 4px #f0c04044; }
+  50%      { box-shadow: 0 0 14px 4px #f0c040cc, 0 0 32px 8px #f0c04066; }
+}
+.sp-star-glow {
+  animation: sp-star-pulse 2s ease-in-out infinite;
+  border-color: #f0c040 !important;
+}
+.sp-star-banner {
+  text-align: center;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  color: #f0c040;
+  background: #1a1400;
+  border: 1px solid #f0c04066;
+  border-radius: 4px;
+  margin-bottom: 6px;
+  animation: sp-star-pulse 2s ease-in-out infinite;
+}
+
+/* Star alignment timer widget on upgrade card */
+.sp-star-timer-wrap { padding: 6px 0 2px; }
+.sp-star-status { font-size: 0.78em; margin-bottom: 4px; }
+.sp-star-bar-wrap { height: 6px; background: #1a1a1a; border-radius: 3px; overflow: hidden; margin-bottom: 3px; }
+.sp-star-bar-fill { height: 100%; border-radius: 3px; background: linear-gradient(90deg, #806010, #f0c040); transition: width 0.9s linear; }
+.sp-star-bar-active { background: linear-gradient(90deg, #c08020, #ffe060); }
+.sp-star-bar-label { font-size: 0.72em; color: #666; }
+.sp-star-actions { font-size: 0.76em; margin-bottom: 4px; line-height: 1.6; }
+
+
+}
+woodcutting-tree.sp-star-glow > a,
+woodcutting-tree.sp-star-glow > div.block,
+.sp-star-glow > .block,
+.sp-star-glow.block {
+  animation: sp-star-card-pulse 2s ease-in-out infinite !important;
+}
+
+
+/* Star alignment glow on individual action cards */
+@keyframes sp-star-card-pulse {
+  0%,100% {
+    box-shadow: 0 0 0 2px #f0c04088, 0 0 12px 4px #f0c04044;
+    outline: 2px solid #f0c04088;
+  }
+  50% {
+    box-shadow: 0 0 0 3px #f0c040ee, 0 0 24px 8px #f0c04099;
+    outline: 2px solid #f0c040ee;
+  }
+}
+a.sp-star-glow,
+div.block.sp-star-glow {
+  animation: sp-star-card-pulse 2s ease-in-out infinite !important;
+  outline-offset: -2px;
+  border-radius: 4px;
+}
+.sp-star-const-row { margin-bottom: 6px; padding-bottom: 6px; border-bottom: 1px solid #1a1a1a; }
+.sp-star-const-row:last-child { border-bottom: none; margin-bottom: 0; }
+
+/* Slayer monster mastery list */
+.sp-mastery-list { display: flex; flex-direction: column; gap: 6px; margin-bottom: 16px; }
+.sp-mastery-row { display: grid; grid-template-columns: 1fr 190px 120px 110px; align-items: center; gap: 10px; padding: 8px 12px; border-radius: 6px; }
+.sp-mastery-name { font-weight: 600; font-size: 0.9em; }
+.sp-mastery-level { font-size: 0.85em; color: #aaa; text-align: center; }
+.sp-mastery-dmg { color: #f0c040; font-size: 0.9em; }
+.sp-mastery-bar-wrap { height: 8px; background: #1a1a1a; border-radius: 4px; overflow: hidden; }
+.sp-mastery-bar-fill { height: 100%; border-radius: 4px; transition: width 0.4s ease; }
+.sp-mastery-xp { font-size: 0.78em; color: #888; text-align: right; }
+@media (max-width: 600px) {
+  .sp-mastery-row { grid-template-columns: 1fr 50px; grid-template-rows: auto auto; }
+  .sp-mastery-bar-wrap { grid-column: 1 / -1; }
+  .sp-mastery-xp { grid-column: 1 / -1; text-align: left; }
+}
